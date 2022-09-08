@@ -103,7 +103,7 @@ class StudyTest03 {
         System.out.println(study);
     }
 
-    static class StudyAggregator implements ArgumentsAggregator { // 반드시 public 또는 inner 사용 
+    static class StudyAggregator implements ArgumentsAggregator { // 반드시 public 또는 inner 사용
         @Override
         public Object aggregateArguments(ArgumentsAccessor argumentsAccessor, ParameterContext parameterContext) throws ArgumentsAggregationException {
             Study study = new Study(argumentsAccessor.getInteger(0), argumentsAccessor.getString(1));
